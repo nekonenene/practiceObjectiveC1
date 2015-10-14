@@ -8,7 +8,6 @@
 
 #import "TestClass.h"
 
-
 @implementation TestClass
 
 // TestClass に関して、 デフォルトの init をオーバーライドする

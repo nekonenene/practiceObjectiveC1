@@ -8,8 +8,7 @@
 /* P.276 〜 */
 
 #import <Foundation/Foundation.h>
-// #import "main.h"
-#import "TestClass.h"
+#import "./Supported Files/TestClass.h"
 
 int main(int argc, const char * argv[])
 {

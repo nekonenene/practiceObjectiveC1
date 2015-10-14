@@ -1,20 +1,21 @@
 //
-//  ParentTestClass.h
+//  Header.h
 //  Chapter10SelfAndSuper
 //
 //  Created by Yokoe on 10/14/15.
 //  Copyright © 2015 HANAUTA. All rights reserved.
 //
-#ifndef parent_test_class_h
-#define parent_test_class_h
+
+#ifndef Header_h
+#define Header_h
 
 #import <Foundation/Foundation.h>
 
 @interface ParentTestClass : NSObject
 {
-    @protected
+@protected
     int _number ;
 }
 @end
 
-#endif
+#endif /* Header_h */

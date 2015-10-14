@@ -15,20 +15,19 @@
 @private
     int _width ;
     int _height ;
-    
 }
 
-/* @property : このように簡略化して private 変数を作れる */
-@property(readonly) int _secretValue ;
-@property int _writableValue ;
+/* @property : このように簡略化して private なインスタンス変数を作れる */
+@property(readonly) int secretValue, nonSynthesizeSecretValue ;
+@property int writableValue ;
 
 @end
 
 
 @implementation Sankaku
 /* @synthesize : こう書くことで、アクセッサメソッドが自動的に作られる */
-@synthesize _secretValue, _writableValue ;
-
+@synthesize writableValue, secretValue ;
+// synthesize を書かない場合、property で作られた _nonSynthesizeSecretValue が作られたまま残る
 
 - (void) setTriangle : (int) width : (int) height
 {
@@ -36,13 +35,16 @@
         _width = width ;
         _height = height ;
     }
-    _secretValue = 500 ;
-    _writableValue = 1200 ;
+    writableValue = 50 ;
+    secretValue = 30 ;  // _secretValue の初期化
+    _nonSynthesizeSecretValue = 300 ; // _nonSynthesizeSecretValue の初期化
     return ;
 }
 
 - (int) getWidth  { return _width  ; }
 - (int) getHeight { return _height ; }
+
+- (int) getNonSynthesizeSecretValue { return _nonSynthesizeSecretValue ; }
 
 - (float) computeTriangleSize
 {
@@ -62,12 +64,12 @@ int main(int argc, const char * argv[])
         NSLog(@"底辺 %d 、高さ %d の三角形の面積は、 %.1f\n", [sankaku_A getWidth], [sankaku_A getHeight],
               [sankaku_A computeTriangleSize]) ;
         
-        NSLog(@"秘密の値は %d\n", sankaku_A._secretValue) ;
-        NSLog(@"書き込み可能な値は、今は %d\n", sankaku_A._writableValue) ;
+        NSLog(@"秘密の値は %d, %d\n", sankaku_A.secretValue, sankaku_A.getNonSynthesizeSecretValue) ;
+        NSLog(@"書き込み可能な値は、今は %d\n", sankaku_A.writableValue) ;
         
         // ここから言えることは、set ができるような値は
-        [sankaku_A set_writableValue : 50] ;
-        NSLog(@"書き込み可能な値は、今は %d\n", sankaku_A._writableValue) ;
+        [sankaku_A setWritableValue : 500] ;
+        NSLog(@"書き込み可能な値は、今は %d\n", sankaku_A.writableValue) ;
     }
     return 0;
 }

@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B63A386C1BCE4F810082729F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B63A386B1BCE4F810082729F /* main.m */; };
+		B69779F91BCF3BD600309A18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B69779F81BCF3BD600309A18 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B63A38661BCE4F810082729F /* CopyFiles */ = {
+		B69779F31BCF3BD600309A18 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B63A38681BCE4F810082729F /* Chapter10NSNumberClass */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Chapter10NSNumberClass; sourceTree = BUILT_PRODUCTS_DIR; };
-		B63A386B1BCE4F810082729F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B69779F51BCF3BD600309A18 /* Chapter10DateAndCalendar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Chapter10DateAndCalendar; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69779F81BCF3BD600309A18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B63A38651BCE4F810082729F /* Frameworks */ = {
+		B69779F21BCF3BD600309A18 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,95 +38,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B63A385F1BCE4F810082729F = {
+		B69779EC1BCF3BD600309A18 = {
 			isa = PBXGroup;
 			children = (
-				B63A386A1BCE4F810082729F /* Chapter10NSNumberClass */,
-				B63A38691BCE4F810082729F /* Products */,
+				B69779F71BCF3BD600309A18 /* Chapter10DateAndCalendar */,
+				B69779F61BCF3BD600309A18 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B63A38691BCE4F810082729F /* Products */ = {
+		B69779F61BCF3BD600309A18 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B63A38681BCE4F810082729F /* Chapter10NSNumberClass */,
+				B69779F51BCF3BD600309A18 /* Chapter10DateAndCalendar */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B63A386A1BCE4F810082729F /* Chapter10NSNumberClass */ = {
+		B69779F71BCF3BD600309A18 /* Chapter10DateAndCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				B63A386B1BCE4F810082729F /* main.m */,
+				B69779F81BCF3BD600309A18 /* main.m */,
 			);
-			name = Chapter10NSNumberClass;
-			path = NSNumberClass;
+			path = Chapter10DateAndCalendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B63A38671BCE4F810082729F /* Chapter10NSNumberClass */ = {
+		B69779F41BCF3BD600309A18 /* Chapter10DateAndCalendar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B63A386F1BCE4F810082729F /* Build configuration list for PBXNativeTarget "Chapter10NSNumberClass" */;
+			buildConfigurationList = B69779FC1BCF3BD600309A18 /* Build configuration list for PBXNativeTarget "Chapter10DateAndCalendar" */;
 			buildPhases = (
-				B63A38641BCE4F810082729F /* Sources */,
-				B63A38651BCE4F810082729F /* Frameworks */,
-				B63A38661BCE4F810082729F /* CopyFiles */,
+				B69779F11BCF3BD600309A18 /* Sources */,
+				B69779F21BCF3BD600309A18 /* Frameworks */,
+				B69779F31BCF3BD600309A18 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Chapter10NSNumberClass;
-			productName = NSNumberClass;
-			productReference = B63A38681BCE4F810082729F /* Chapter10NSNumberClass */;
+			name = Chapter10DateAndCalendar;
+			productName = Chapter10DateAndCalendar;
+			productReference = B69779F51BCF3BD600309A18 /* Chapter10DateAndCalendar */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B63A38601BCE4F810082729F /* Project object */ = {
+		B69779ED1BCF3BD600309A18 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = HANAUTA;
 				TargetAttributes = {
-					B63A38671BCE4F810082729F = {
+					B69779F41BCF3BD600309A18 = {
 						CreatedOnToolsVersion = 7.0.1;
 					};
 				};
 			};
-			buildConfigurationList = B63A38631BCE4F810082729F /* Build configuration list for PBXProject "Chapter10NSNumberClass" */;
+			buildConfigurationList = B69779F01BCF3BD600309A18 /* Build configuration list for PBXProject "Chapter10DateAndCalendar" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = B63A385F1BCE4F810082729F;
-			productRefGroup = B63A38691BCE4F810082729F /* Products */;
+			mainGroup = B69779EC1BCF3BD600309A18;
+			productRefGroup = B69779F61BCF3BD600309A18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B63A38671BCE4F810082729F /* Chapter10NSNumberClass */,
+				B69779F41BCF3BD600309A18 /* Chapter10DateAndCalendar */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B63A38641BCE4F810082729F /* Sources */ = {
+		B69779F11BCF3BD600309A18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B63A386C1BCE4F810082729F /* main.m in Sources */,
+				B69779F91BCF3BD600309A18 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B63A386D1BCE4F810082729F /* Debug */ = {
+		B69779FA1BCF3BD600309A18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -168,7 +167,7 @@
 			};
 			name = Debug;
 		};
-		B63A386E1BCE4F810082729F /* Release */ = {
+		B69779FB1BCF3BD600309A18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -203,42 +202,41 @@
 			};
 			name = Release;
 		};
-		B63A38701BCE4F810082729F /* Debug */ = {
+		B69779FD1BCF3BD600309A18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = Chapter10NSNumberClass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		B63A38711BCE4F810082729F /* Release */ = {
+		B69779FE1BCF3BD600309A18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = Chapter10NSNumberClass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B63A38631BCE4F810082729F /* Build configuration list for PBXProject "Chapter10NSNumberClass" */ = {
+		B69779F01BCF3BD600309A18 /* Build configuration list for PBXProject "Chapter10DateAndCalendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B63A386D1BCE4F810082729F /* Debug */,
-				B63A386E1BCE4F810082729F /* Release */,
+				B69779FA1BCF3BD600309A18 /* Debug */,
+				B69779FB1BCF3BD600309A18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B63A386F1BCE4F810082729F /* Build configuration list for PBXNativeTarget "Chapter10NSNumberClass" */ = {
+		B69779FC1BCF3BD600309A18 /* Build configuration list for PBXNativeTarget "Chapter10DateAndCalendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B63A38701BCE4F810082729F /* Debug */,
-				B63A38711BCE4F810082729F /* Release */,
+				B69779FD1BCF3BD600309A18 /* Debug */,
+				B69779FE1BCF3BD600309A18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B63A38601BCE4F810082729F /* Project object */;
+	rootObject = B69779ED1BCF3BD600309A18 /* Project object */;
 }

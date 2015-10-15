@@ -22,13 +22,26 @@ int main(int argc, const char * argv[])
         NSString *string2 = [[NSString alloc] initWithFormat: @"num1 に格納されている値は、 %d", (int)num1] ;
         NSLog(@"%@ だよ！\n", string2) ;
         
-        NSString *numberString1 = @"3.14" ;
-        NSLog(@"%@ の文字数は %u", numberString1, (unsigned int)[numberString1 length]) ;
+        NSString *numberString = @"3.14" ;
+        // NSString *numberString = [[NSString alloc] initWithString:@"3.14"] ; // ダメ、これは冗長な書き方
+        NSLog(@"%@ の文字数は %u", numberString, (unsigned int)[numberString length]) ;
+        // length の戻り値は、NSUInteger ( NSInteger の unsigned 版 )
         
         // この文字列を数値にパースする
         // ※ float は int と違い、32bit, 64bit に影響されないので、NSFloat みたいなものは無い
-        float num2 = [numberString1 floatValue] ;
+        float num2 = [numberString floatValue] ;
         NSLog(@"%f", num2) ;
+        
+        // [numberString appendString:@"15926" ] ; // これはできない
+        // Mutable の方を使う。Mutable の宣言では initWithString が必要な点に注意
+        NSMutableString *numberMutableString = [[NSMutableString alloc] initWithString:@"3.14" ] ;
+        NSLog(@"%@", numberMutableString) ;
+        [numberMutableString appendString:@"1592" ] ;
+        NSLog(@"%@", numberMutableString) ;
+
+        float num3 = [numberMutableString floatValue] ;
+        NSLog(@"%f", num3) ; // 3.141592
+        NSLog(@"%d", (int)num3) ; // 3
     }
     return 0;
 }

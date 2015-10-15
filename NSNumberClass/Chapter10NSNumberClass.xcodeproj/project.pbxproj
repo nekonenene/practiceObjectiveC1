@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B63A38681BCE4F810082729F /* NSNumberClass */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NSNumberClass; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63A38681BCE4F810082729F /* Chapter10NSNumberClass */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Chapter10NSNumberClass; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63A386B1BCE4F810082729F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 		B63A385F1BCE4F810082729F = {
 			isa = PBXGroup;
 			children = (
-				B63A386A1BCE4F810082729F /* NSNumberClass */,
+				B63A386A1BCE4F810082729F /* Chapter10NSNumberClass */,
 				B63A38691BCE4F810082729F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +49,26 @@
 		B63A38691BCE4F810082729F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B63A38681BCE4F810082729F /* NSNumberClass */,
+				B63A38681BCE4F810082729F /* Chapter10NSNumberClass */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B63A386A1BCE4F810082729F /* NSNumberClass */ = {
+		B63A386A1BCE4F810082729F /* Chapter10NSNumberClass */ = {
 			isa = PBXGroup;
 			children = (
 				B63A386B1BCE4F810082729F /* main.m */,
 			);
+			name = Chapter10NSNumberClass;
 			path = NSNumberClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B63A38671BCE4F810082729F /* NSNumberClass */ = {
+		B63A38671BCE4F810082729F /* Chapter10NSNumberClass */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B63A386F1BCE4F810082729F /* Build configuration list for PBXNativeTarget "NSNumberClass" */;
+			buildConfigurationList = B63A386F1BCE4F810082729F /* Build configuration list for PBXNativeTarget "Chapter10NSNumberClass" */;
 			buildPhases = (
 				B63A38641BCE4F810082729F /* Sources */,
 				B63A38651BCE4F810082729F /* Frameworks */,
@@ -77,9 +78,9 @@
 			);
 			dependencies = (
 			);
-			name = NSNumberClass;
+			name = Chapter10NSNumberClass;
 			productName = NSNumberClass;
-			productReference = B63A38681BCE4F810082729F /* NSNumberClass */;
+			productReference = B63A38681BCE4F810082729F /* Chapter10NSNumberClass */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +97,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B63A38631BCE4F810082729F /* Build configuration list for PBXProject "NSNumberClass" */;
+			buildConfigurationList = B63A38631BCE4F810082729F /* Build configuration list for PBXProject "Chapter10NSNumberClass" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -108,7 +109,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B63A38671BCE4F810082729F /* NSNumberClass */,
+				B63A38671BCE4F810082729F /* Chapter10NSNumberClass */,
 			);
 		};
 /* End PBXProject section */
@@ -205,21 +206,21 @@
 		B63A38701BCE4F810082729F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Chapter10NSNumberClass;
 			};
 			name = Debug;
 		};
 		B63A38711BCE4F810082729F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Chapter10NSNumberClass;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B63A38631BCE4F810082729F /* Build configuration list for PBXProject "NSNumberClass" */ = {
+		B63A38631BCE4F810082729F /* Build configuration list for PBXProject "Chapter10NSNumberClass" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B63A386D1BCE4F810082729F /* Debug */,
@@ -228,13 +229,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B63A386F1BCE4F810082729F /* Build configuration list for PBXNativeTarget "NSNumberClass" */ = {
+		B63A386F1BCE4F810082729F /* Build configuration list for PBXNativeTarget "Chapter10NSNumberClass" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B63A38701BCE4F810082729F /* Debug */,
 				B63A38711BCE4F810082729F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -95,7 +95,7 @@ int main(int argc, const char * argv[])
         /* readString を 行ごとに分割して配列に入れる */
         NSArray *oneStringArray = [readString componentsSeparatedByString:@"\n"] ;
         
-        NSLog(@"2 行目に書かれているメッセージは \"%@\" です。\n", [oneStringArray objectAtIndex:1]) ;
+        NSLog(@"2 行目に書かれているメッセージは \" %@ \" です。\n", oneStringArray[1]) ;
    }
     return 0 ;
 }

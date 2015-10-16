@@ -24,12 +24,12 @@ int main(int argc, const char * argv[])
         
         NSString *numberString = @"3.14" ;
         // NSString *numberString = [[NSString alloc] initWithString:@"3.14"] ; // ダメ、これは冗長な書き方
-        NSLog(@"%@ の文字数は %u", numberString, (unsigned int)[numberString length]) ;
+        NSLog(@"%@ の文字数は %u", numberString, (unsigned int)numberString.length) ;
         // length の戻り値は、NSUInteger ( NSInteger の unsigned 版 )
         
         // この文字列を数値にパースする
         // ※ float は int と違い、32bit, 64bit に影響されないので、NSFloat みたいなものは無い
-        float num2 = [numberString floatValue] ;
+        float num2 = numberString.floatValue ;
         NSLog(@"%f", num2) ;
         
         // [numberString appendString:@"15926" ] ; // これはできない
@@ -39,7 +39,7 @@ int main(int argc, const char * argv[])
         [numberMutableString appendString:@"1592" ] ;
         NSLog(@"%@", numberMutableString) ;
 
-        float num3 = [numberMutableString floatValue] ;
+        float num3 = numberMutableString.floatValue ;
         NSLog(@"%f", num3) ; // 3.141592
         NSLog(@"%d", (int)num3) ; // 3
     }
